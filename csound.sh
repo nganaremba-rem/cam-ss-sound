@@ -2,7 +2,7 @@ red="\e[1;91m"
 green="\e[1;92m"
 white="\e[0m"
 loc="/system/product/media/audio/ui"
-su -v
+su -v &> /dev/null
 if [ "$?" -ne "0" ]; then
   echo -e "${red}*** No root permission ***${white}"
   exit
